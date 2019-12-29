@@ -101,9 +101,9 @@ print ('Task 9')
 r = 927546
 max = 0
 while r > 0:
-   if r % 10 > max:
+    if r % 10 > max:
        max = r % 10
-r //= 10
+    r //= 10
 print(max)
 print ('')
 '''
