@@ -60,5 +60,11 @@ print(new_most_frequent_2(list_names))
 
 # 3. Напишите функцию вывода самой редкой буквы, с которого начинаются имена в списке на выходе функции F.
 def most_frequent(list_names):
-    return min(set(list_names), key = list_names.count)
+    letters = {}
+    for name in list_names:
+        for char in name:
+            letters[char] = letters.get(char, 0) + 1
+        letters = sorted(list(letters.items()), lambda x: x[1])
+    return letters [0][0]
+#min(set(list_names), key = list_names.count)
 print(most_frequent(list_names))
