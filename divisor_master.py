@@ -5,7 +5,6 @@ if __name__ == '__lesson_5':
 def is_prime(n):
     while n > 1:
         for n % i == 0:
-        # n // n == 0
             i += 1
     return n
 print(is_prime(n))
@@ -28,7 +27,7 @@ print(all_dividers(n))
 # 3) выводит самый большой простой делитель числа.
 
 def greatest_pr_div(n):
-    mam = []
+    max = []
     for n % i == 0:
         if max < max_temp[i]:
             max = max_temp[i]

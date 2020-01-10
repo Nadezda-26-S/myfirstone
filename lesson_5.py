@@ -6,9 +6,9 @@ import divisor_master
 
 for n in range (1, 1001):
 
-print(is_prime(n))
-print(all_dividers(n))
-print(greatest_pr_div(n))
+    print(is_prime(453))
+    print(all_dividers(765))
+    print(greatest_pr_div(23))
 
 # print(divisor_master.is_prime(n))
 # print(divisor_master.all_dividers(n))
