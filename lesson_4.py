@@ -4,6 +4,7 @@
 #(могут повторяться, можно взять значения: количество имен 20, N = 100, рекомендуется использовать функцию random);
 from random import choices
 import random
+
 list_names = ['Roma', 'Artur', 'Zena', 'Dima', 'Andrey', 'Sergey', 'Yaroslav', 'Nina', 'Diego', 'Javex', 'Lobo', 'German', 'Maxx', 'Kris', 'Misha', 'Masha', 'Maksim', 'Arkadiy', 'Boris', 'Robert']
 print('ИСХОДНЫЙ СПИСОК: ', list_names)
 len_list = 100
