@@ -1,19 +1,20 @@
 
 # 1) проверка числа на простоту (простые числа - это те числа у которых делители единица и они сами);
-if __name__ == '__lesson_5':
+#if __name__ == '__lesson_5':
 
 def is_prime(n):
-    while n > 1:
-        for n % i == 0:
-        # n // n == 0
-            i += 1
-    return n
-print(is_prime(n))
+    i = 2
+    while n > i:
+        if n % i == 0:
+            break
+        i += 1
+    return i == n
+print(is_prime(344))
 
 # 2) выводит список всех делителей числа;
-
 def all_dividers(n):
     result = []
+    i = 2
     while i * i <= n:
         if n % i == 0:
             n //= i
@@ -23,16 +24,14 @@ def all_dividers(n):
     if  n > 1:
         result.append(n)
     return result
-print(all_dividers(n))
+print(all_dividers(23244))
 
 # 3) выводит самый большой простой делитель числа.
-
 def greatest_pr_div(n):
-    mam = []
-    for n % i == 0:
-        if max < max_temp[i]:
-            max = max_temp[i]
-print(max)
-
-# КАК ЧЕРЕЗ ЛЯМБДУ:: greatest_pr_div() = lambda n: greatest_pr_div(i) > greatest_pr_div(i+1) if n > 1 else &
-# if ... lambda n, i: i if i>(i+1) else i+1
+    prime_num = all_dividers(n)
+    max_num = 0
+    for i in prime_num:
+        if i > max_num:
+            max_num = i
+    return(max_num)
+print(greatest_pr_div(23244))
