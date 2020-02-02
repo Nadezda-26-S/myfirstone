@@ -8,13 +8,13 @@ def is_prime(n):
             break
         i += 1
     return i == n
-print(is_prime(n))
+print(is_prime(43))
 
-def test_is_prime_1():
-    assert is_prime_1(7)  == True
+def test_1_is_prime():
+    assert is_prime(7)  == True
 
-def test_is_prime_2():
-    assert is_prime_2(344) == False
+def test_2_is_prime():
+    assert is_prime(344) == False
 
 # выводит список всех делителей числа;
 def all_dividers(n):
@@ -31,8 +31,8 @@ def all_dividers(n):
     return result
 print(all_dividers(24))
 
-def test_all_dividers_1():
-    assert all_dividers_1(7) == 7
+def test_all_dividers():
+    assert all_dividers(7) != 7
 
 # выводит самый большой простой делитель числа.
 def greatest_pr_div(n):
